@@ -53,19 +53,16 @@ input::-webkit-inner-spin-button {
 }
 
 .container {
+    flex:1;
     min-height: 42rem;
 }
 
 .wrapper{
     display:flex;
     justify-content:center;
-    align-items:center;
 }
 
 .side-bar {
-    position: absolute;
-    top: 8rem;
-    height: 42rem;
     width: 18rem;
     background-color: var(--light);
     z-index: 1000;

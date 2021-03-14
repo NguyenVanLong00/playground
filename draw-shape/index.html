@@ -4,85 +4,81 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>draw shape</title>
+    <link rel="stylesheet" href="main.css">
+    <title>Editor</title>
 </head>
 
-<style>
-    body {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background-color: #b4f1f1;
-    }
-
-    #controller {
-        position: fixed;
-        right: 0rem;
-        top: 0rem;
-        display: flex;
-        padding: 5rem 1rem 5rem 2rem;
-        background-color: white;
-        opacity: 40%;
-        transition: 0.3s;
-        border-bottom-left-radius: 20px;
-    }
-
-    #controller:hover {
-        opacity: 100%;
-    }
-
-    .left-side,
-    .right-side {
-        display: flex;
-        flex-direction: column;
-    }
-
-    label {
-        margin-top: 3px;
-        margin-right: 1rem;
-    }
-</style>
-
 <body>
-    <div id="container">
+    
 
+    <div class="wrapper">
+        <div class="side-bar">
+            <div class="editor">
+                <div class="left">
+                    <div class="input-field">
+                        <label>W</label>
+                        <input type="number" id="width" name="width" />
+                    </div>
+                    <div class="input-field">
+                        <label>H</label>
+                        <input type="number" id="height" name="height" />
+                    </div>
+                    
+                    <a href="#" class="btn" onclick="saveModel()">save</a>
+                </div>
+                <div class="right">
+                    <!-- <div class="input-field">
+                        <label>X</label>
+                        <input type="number" id="posX" name="posX" />
+                    </div>
+                    <div class="input-field">
+                        <label>Y</label>
+                        <input type="number" id="posY" name="posY" />
+                    </div> -->
+                    <div class="input-field">
+                        <label>Stroke</label>
+                        <input type="text" id="stroke" name="stroke" />
+                    </div>
+                    <div class="input-field">
+                        <label>Fill</label>
+                        <input type="text" id="fill" name="fill" />
+                    </div>
+                    <a href="#" class="btn" onclick="savePDF()">export</a>
+                </div>
+            </div>
+            <div class="wrapper">
+                <a onclick="clearLayer()" href="#" class="btn">clear</a>
+            </div>
+
+            <div id="components">
+                <p>component</p>
+                <div id="comp1"  class="comp" draggable="true">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/LetterH.svg/1200px-LetterH.svg.png"
+                        alt="h">
+                    <p>component 1</p>
+                    <a href="#" class="btn" onclick="createModel(1,'new')">new</a>
+                    <a href="#" class="btn" onclick="createModel(1,'load')">load</a>
+                </div>
+                <div id="comp2" class="comp" draggable="true">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/LetterH.svg/1200px-LetterH.svg.png"
+                        alt="h">
+                    <p>component 2</p>
+                    <a href="#" class="btn" onclick="createModel(2,'new')">new</a>
+                    <a href="#" class="btn" onclick="createModel(2,'load')">load</a>
+                </div>
+            </div>
+        </div>
+        <div id="container">
+            
+        </div>
     </div>
 
-    <form id="controller">
-        <div class="left-side">
-            <label>x</label>
-            <label>y</label>
-            <label>width</label>
-            <label>height</label>
-            
-            <button onclick="savePDF()">SAVE PDF</button>
-        </div>
-        <div class='right-side' id="editor-shape1" style="display: none;">
-            <input type="number" id="posX1" name="posX" />
-            <input type="number" id="posY1" name="posY" />
-            <input type="number" id="width1" name="width" />
-            <input type="number" id="height1" name="height" />
-            
-        </div>
-        <div class='right-side' id="editor-shape2" style="display: none;">
-            <input type="number" id="posX2" name="posX" />
-            <input type="number" id="posY2" name="posY" />
-            <input type="number" id="width2" name="width" />
-            <input type="number" id="height2" name="height" />
-            
-        </div>
-        <div class='right-side' id="editor-shape3">
-            <input type="number" id="posX3" name="posX" />
-            <input type="number" id="posY3" name="posY" />
-            <input type="number" id="width3" name="width" />
-            <input type="number" id="height3" name="height" />
-        </div>
-    </form>
-
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://unpkg.com/konva@7.0.3/konva.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.2/jspdf.min.js"></script>
     <script src='model.js'></script>
     <script src='main.js'></script>
+
 </body>
 
 </html>

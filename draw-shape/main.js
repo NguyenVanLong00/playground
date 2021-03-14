@@ -3,38 +3,55 @@ const height = window.innerHeight;
 
 const stage = new Konva.Stage({
     container: 'container',
-    width: width,
+    width: width - 288,
     height: height,
 });
-let model;
+let model ;
 let layer = new Konva.Layer();
 stage.add(layer);
-var canvas = document.querySelector('canvas');
+let canvas = document.querySelector('canvas');
+let currentModelID=null;
+
 
 function savePDF() {
+    model.withStroke(true);
     var imgData = canvas.toDataURL("image/jpeg", 0.3);
-    var pdf = new jsPDF();
+    var pdf = new jsPDF({
+        unit: "in",
+        format: [16, 9], 
+        background:"white"
+    });
     pdf.addImage(imgData, 'JPEG', 0, 0);
     pdf.save("download.pdf");
+    model.withStroke(false);
 }
 
-function clearLayer(){
+function clearLayer() {
     layer.destroyChildren();
     layer.draw();
 }
 
-function createModel(id, data = null) {
+function saveModel() {
+    window.localStorage.setItem(currentModelID, model.export());
+}
+
+function createModel(id, action) {
+    if(currentModelID!=null) saveModel();
     switch (id) {
         case 1:
+            currentModelID = "comp1";
+            data = action == 'new' ? null : window.localStorage.getItem(currentModelID);
+           
             model = new Model_No1(data);
             break;
         case 2:
-            console.log(2);
+            currentModelID = "comp2";
+            data = action == 'new' ? null : window.localStorage.getItem(currentModelID);
             model = new Model_No2(data);
             break;
     }
-    console.log(model);
     model.appendTo(layer);
     model.editing();
     layer.draw();
 }
+

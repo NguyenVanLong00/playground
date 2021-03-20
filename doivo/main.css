@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Dosis:wght@300;400;500&display=swap");
 *,
 html,
 body {
@@ -12,54 +13,48 @@ body {
   border-top: 3px solid #167a8b;
 }
 
-.wrapper {
-  padding: 0 10rem;
+.btn-custom {
+  border: none;
+  color: #243d44;
 }
 
-a {
-  text-decoration: none;
-  color: inherit;
+@keyframes moveUpAndDown {
+  0% {
+    transform: translateY(0%);
+  }
+  50% {
+    transform: translateY(3%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
+#how_to_use div div img:hover {
+  animation: moveUpAndDown 3s infinite;
 }
 
-.button {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 8rem;
-  height: 2rem;
-  border-radius: 0.4rem;
-  transition: 0.3s;
+.news_container {
+  position: relative;
+  border: 2px solid white;
+  border-top-right-radius: 2rem;
+  width: 22rem;
+  height: 15rem;
+  background-color: greenyellow;
+  background-position: center;
+  background-size: cover;
 }
-
-header #action {
-  padding-top: 1rem;
-  display: flex;
-  justify-content: flex-end;
-}
-header #action a {
-  text-transform: capitalize;
-  margin-left: 2rem;
-}
-header #action a:hover {
-  background-color: #167a8b;
+.news_container h5 {
+  display: none;
+  height: 8rem;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
   color: #fff;
-  font-weight: 500;
-}
-header #navigation {
-  position: fixed;
-  top: 0;
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
-  width: 100%;
-  padding: 0 10rem 1.5rem 10rem;
-  box-shadow: 0 3px 6px #90fc86;
-}
-header #navigation #logo {
-  width: 10rem;
-}
-header #navigation nav a {
-  padding-bottom: 2rem;
+  background-image: url("./img/new-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
 }
 
 /*# sourceMappingURL=main.css.map */

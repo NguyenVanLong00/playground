@@ -4,38 +4,299 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <link rel="stylesheet" href="./OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="./OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+
     <link rel="stylesheet" href="main.css">
-    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css"> -->
+
     <title>Doi Vo</title>
 </head>
 
 <body>
-    <header id="page-header" >
-        <div id="action" class="wrapper">
-            <a href="#" class="button ">đăng nhặp</a>
-            <a href="#" class="button ">đăng ký</a>
+    <header id="page-header">
+        <div class="container-md d-none pt-2 d-sm-flex justify-content-end">
+            <button class="btn btn-sm btn-outline-primary btn-custom">Khuyến Mãi</button>
+            <button class="btn btn-sm btn-outline-primary btn-custom">Đăng Nhận Đăng Ký</button>
+            <button class="btn btn-sm btn-outline-primary btn-custom">Đăng Ký Tư Vấn</button>
         </div>
-        <div id="navigation" >
-            <img id="logo" src="./img/logo.svg" alt="logo" />
-            <nav>
-                <a href="#" class="nav-section">trang chủ</a>
-                <a href="#" class="nav-section">hợp tác</a>
-                <a href="#" class="nav-section">tin tức</a>
-                <a href="#" class="nav-section">điểm thanh toán</a>
-                <a href="#" class="nav-section">về chúng tôi</a>
-                <a href="#" class="nav-section">tuyển dụng</a>
-            </nav>
-        </div>
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container">
+                <a class="navbar-brand" href="#" style="width:8rem">
+                    <img src="./img/logo.svg" alt="logo" class="img-fulid">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+                    aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse d-flex justify-content-end" id="navbarScroll">
+                    <ul class="navbar-nav my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Trang Chủ</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Hợp Tác
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                                <li><a class="dropdown-item" href="#">Dịch Vụ Đổi Vỏ</a></li>
+                                <li><a class="dropdown-item" href="#">Hợp Tác Khác</a></li>
+                                <li><a class="dropdown-item" href="#">Đối Tác</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">Tin Tức</a>
+                        </li>
+                        <li class="nav-item"><a href="#" class="nav-link">Điểm Thanh Toán</a></li>
+
+                        <li class="nav-item"><a href="#" class="nav-link">Về Chúng Tôi</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
     </header>
-    <div class="splide"></div>
-    <section id="content" class="wrapper"></section>
-    <section id="supermarkets" class="wrapper">
-        </sectionn>
 
-        <footer id="page-footer" class="wrapper"></footer>
 
-        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-        <script src='main.js'></script>
+
+
+
+
+    <!-- start slide  -->
+
+    <div id="page_hero_slide" class="carousel slide carousel-fade" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#page_hero_slide" data-bs-slide-to="0" class="active my_dot"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#page_hero_slide" data-bs-slide-to="1" class="my_dot"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#page_hero_slide" data-bs-slide-to="2" class="my_dot"
+                aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#page_hero_slide" data-bs-slide-to="3" class="my_dot"
+                aria-label="Slide 4"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="./img/slide1.png" class="d-block w-100 img-fluid" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="./img/slide2.png" class="d-block w-100 img-fluid" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="./img/slide3.jpg" class="d-block w-100 img-fluid" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="./img/sldie4.png" class="d-block w-100 img-fluid" alt="...">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#page_hero_slide" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#page_hero_slide" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <!-- end slide -->
+
+    <section id="video" class="container-md mx-auto text-center p-5 my-5">
+        <p class="px-md-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut eaque placeat architecto est
+            quod perspiciatis
+            ratione voluptate neque cum tempora sit recusandae quae pariatur enim, nostrum labore harum! Sit, qui.</p>
+        <iframe class="my-5 rounded" width="560" height="315" src="https://www.youtube-nocookie.com/embed/dLmyp3xMsAo"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+
+
+    </section>
+
+    <section id="how_to_use" class="container-md text-center my-5 py-5">
+        <h1>Sử dụng Đổi Vỏ như thế nào?</h1>
+        <div class="row row p-5 my-5">
+            <div class="col-6 col-lg-3">
+                <img class="img-fluid"
+                    src="https://cdn.shortpixel.ai/client/q_lossy,ret_img,w_300/https://vnpay.vn:443/wp-content/uploads/2019/03/buoc1.png"
+                    alt=""> 
+                <h4 class="bg-primary mx-auto w-75 py-2 mt-3 text-white">Bước 1</h4>
+                <p>Đăng Nhập Bằng Số Điện Thoại</p>
+            </div>
+            <div class="col-6 col-lg-3">
+                <img class="img-fluid"
+                    src="https://cdn.shortpixel.ai/client/q_lossy,ret_img,w_300/https://vnpay.vn:443/wp-content/uploads/2019/03/buoc2.png"
+                    alt="">
+                <h4 class="bg-primary mx-auto w-75 py-2 mt-3  text-white">Bước 1</h4>
+                <p>Đăng Nhập Bằng Số Điện Thoại</p>
+            </div>
+            <div class="col-6 col-lg-3">
+                <img class="img-fluid"
+                    src="https://cdn.shortpixel.ai/client/q_lossy,ret_img,w_300/https://vnpay.vn:443/wp-content/uploads/2019/03/buoc3.png"
+                    alt="">
+                <h4 class="bg-primary mx-auto w-75 py-2 mt-3 text-white">Bước 1</h4>
+                <p>Đăng Nhập Bằng Số Điện Thoại</p>
+            </div>
+            <div class="col-6 col-lg-3">
+                <img class="img-fluid"
+                    src="https://cdn.shortpixel.ai/client/q_lossy,ret_img,w_300/https://vnpay.vn:443/wp-content/uploads/2019/03/buoc4.png"
+                    alt="">
+                <h4 class="bg-primary mx-auto w-75 py-2 mt-3 text-white">Bước 1</h4>
+                <p>Đăng Nhập Bằng Số Điện Thoại</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="coperator" class="container-md  my-5 py-5">
+        <h1 class="text-center">ĐỐI TÁC TIÊU BIỂU</h1>
+        <div class="row pt-5 mt-5">
+            <div class="col-4 col-md-3 col-lg-2 gx-1 ">
+                <img class="img-fluid" src="https://vnpay.vn:443/wp-content/uploads/2020/04/aeonlogo.png" alt="bigc">
+            </div>
+            <div class="col-4 col-md-3 col-lg-2 gx-1 ">
+                <img class="img-fluid" src="https://vnpay.vn:443/wp-content/uploads/2020/04/aeonlogo.png" alt="bigc">
+            </div>
+            <div class="col-4 col-md-3 col-lg-2 gx-1 ">
+                <img class="img-fluid" src="https://vnpay.vn:443/wp-content/uploads/2020/04/aeonlogo.png" alt="bigc">
+            </div>
+            <div class="col-4 col-md-3 col-lg-2 gx-1 ">
+                <img class="img-fluid" src="https://vnpay.vn:443/wp-content/uploads/2020/04/aeonlogo.png" alt="bigc">
+            </div>
+            <div class="col-4 col-md-3 col-lg-2 gx-1 ">
+                <img class="img-fluid" src="https://vnpay.vn:443/wp-content/uploads/2020/04/aeonlogo.png" alt="bigc">
+            </div>
+            <div class="col-4 col-md-3 col-lg-2 gx-1 ">
+                <img class="img-fluid" src="https://vnpay.vn:443/wp-content/uploads/2020/04/aeonlogo.png" alt="bigc">
+            </div>
+            <div class="col-4 col-md-3 col-lg-2 gx-1 ">
+                <img class="img-fluid" src="https://vnpay.vn:443/wp-content/uploads/2020/04/aeonlogo.png" alt="bigc">
+            </div>
+            <div class="col-4 col-md-3 col-lg-2 gx-1 ">
+                <img class="img-fluid" src="https://vnpay.vn:443/wp-content/uploads/2020/04/aeonlogo.png" alt="bigc">
+            </div>
+            <div class="col-4 col-md-3 col-lg-2 gx-1 ">
+                <img class="img-fluid" src="https://vnpay.vn:443/wp-content/uploads/2020/04/aeonlogo.png" alt="bigc">
+            </div>
+            <div class="col-4 col-md-3 col-lg-2 gx-1 ">
+                <img class="img-fluid" src="https://vnpay.vn:443/wp-content/uploads/2020/04/aeonlogo.png" alt="bigc">
+            </div>
+            <div class="col-4 col-md-3 col-lg-2 gx-1 ">
+                <img class="img-fluid" src="https://vnpay.vn:443/wp-content/uploads/2020/04/aeonlogo.png" alt="bigc">
+            </div>
+            <div class="col-4 col-md-3 col-lg-2 gx-1 ">
+                <img class="img-fluid" src="https://vnpay.vn:443/wp-content/uploads/2020/04/aeonlogo.png" alt="bigc">
+            </div>
+            <div class="col-4 col-md-3 col-lg-2 gx-1 ">
+                <img class="img-fluid" src="https://vnpay.vn:443/wp-content/uploads/2020/04/aeonlogo.png" alt="bigc">
+            </div>
+            <div class="col-4 col-md-3 col-lg-2 gx-1 ">
+                <img class="img-fluid" src="https://vnpay.vn:443/wp-content/uploads/2020/04/aeonlogo.png" alt="bigc">
+            </div>
+            <div class="col-4 col-md-3 col-lg-2 gx-1 ">
+                <img class="img-fluid" src="https://vnpay.vn:443/wp-content/uploads/2020/04/aeonlogo.png" alt="bigc">
+            </div>
+            <div class="col-4 col-md-3 col-lg-2 gx-1 ">
+                <img class="img-fluid" src="https://vnpay.vn:443/wp-content/uploads/2020/04/aeonlogo.png" alt="bigc">
+            </div>
+            <div class="col-4 col-md-3 col-lg-2 gx-1 ">
+                <img class="img-fluid" src="https://vnpay.vn:443/wp-content/uploads/2020/04/aeonlogo.png" alt="bigc">
+            </div>
+            <div class="col-4 col-md-3 col-lg-2 gx-1 ">
+                <img class="img-fluid" src="https://vnpay.vn:443/wp-content/uploads/2020/04/aeonlogo.png" alt="bigc">
+            </div>
+        </div>
+        <button class="btn btn-sm btn-primary float-end px-4" style="border-radius: 1rem;">xem tất cả</button>
+    </section>
+
+    <section id="hightligt" class="container-md text-center">
+        <!-- hightligt-slide -->
+        <div id="page_hightlight_slide" class="carousel slide mx-auto my-5" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#page_hightlight_slide" data-bs-slide-to="0" class="active my_dot"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#page_hightlight_slide" data-bs-slide-to="1" class="my_dot"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#page_hightlight_slide" data-bs-slide-to="2" class="my_dot"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./img/slide1.png" class="d-block w-100 img-fluid" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="./img/slide2.png" class="d-block w-100 img-fluid" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="./img/slide3.jpg" class="d-block w-100 img-fluid" alt="...">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#page_hightlight_slide"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#page_hightlight_slide"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        <!-- end hightlight slide -->
+        <h1 class="my-5 pt-5 pb-3">TIÊU ĐIỂM</h1>
+        <!-- News-slide -->
+
+
+        <div class="owl-carousel mx-auto">
+            <div class="news_container">
+                <h5 class="m-0 pb-3 pl-3 pt-5">Nội dung tin tức 1</h5>
+            </div>
+            <div class="news_container">
+                <h5 class="m-0 pb-3 pl-3 pt-5">Nội dung tin tức 2</h5>
+            </div>
+            <div class="news_container">
+                <h5 class="m-0 pb-3 pl-3 pt-5">Nội dung tin tức 3</h5>
+            </div>
+            <div class="news_container">
+                <h5 class="m-0 pb-3 pl-3 pt-5">Nội dung tin tức 4</h5>
+            </div>
+            <div class="news_container">
+                <h5 class="m-0 pb-3 pl-3 pt-5">Nội dung tin tức 5</h5>
+            </div>
+            <div class="news_container">
+                <h5 class="m-0 pb-3 pl-3 pt-5">Nội dung tin tức 6</h5>
+            </div>
+            <div class="news_container">
+                <h5 class="m-0 pb-3 pl-3 pt-5">Nội dung tin tức 7</h5>
+            </div>
+            <div class="news_container">
+                <h5 class="m-0 pb-3 pl-3 pt-5">Nội dung tin tức 8</h5>
+            </div>
+            <div class="news_container">
+                <h5 class="m-0 pb-3 pl-3 pt-5">Nội dung tin tức 9</h5>
+            </div>  
+        </div>
+        <!-- end news slide -->
+    </section>
+
+    <section id="benefit">
+        <h1>LỢI ÍCH THANH TOÁN</h1>
+    </section>
+
+    <footer id="page-footer" class="wrapper"></footer>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous">
+    </script>
+    <script src="https://kit.fontawesome.com/bdbb719b4e.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="./OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
+    <script src='main.js'></script>
 </body>
 
-</html>
+</html>`

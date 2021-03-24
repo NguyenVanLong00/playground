@@ -16,49 +16,56 @@
     <title>Doi Vo</title>
 </head>
 
-<body>
+<body class="bg-light">
     <header id="page-header">
         <div class="container-md d-none pt-2 d-sm-flex justify-content-end">
             <button class="btn btn-sm btn-outline-primary btn-custom ">Khuyến Mãi</button>
             <button class="btn btn-sm btn-outline-primary btn-custom mx-3">Đăng Nhận Đăng Ký</button>
             <button class="btn btn-sm btn-outline-primary btn-custom ">Đăng Ký Tư Vấn</button>
         </div>
-        <nav class="navbar navbar-expand-lg navbar-light">
-            <div class="container">
-                <a class="navbar-brand" href="#" style="width:8rem">
-                    <img src="./img/logo.svg" alt="logo" class="img-fulid">
-                </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
-                    aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+        <nav class="navbar navbar-expand-lg navbar-light bg-white mb-4 py-3  ">
+            <div class="container-md">
+                <a class="navbar-brand" href="#" style="font-size: 2rem;">Doivo</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse d-flex justify-content-end" id="navbarScroll">
-                    <ul class="navbar-nav my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0 float-right">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Trang Chủ</a>
+                            <a class="nav-link active" aria-current="page" href="#">TRANG CHỦ</a>
                         </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button"
-                                data-bs-toggle="dropdown" aria-expanded="false">
-                                Hợp Tác
+                        <li class="nav-item dropdown ms-4">
+                            <a class="nav-link" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                HỢP TÁC
+
+                                <i class="fas fa-chevron-down"></i>
                             </a>
-                            <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
-                                <li><a class="dropdown-item" href="#">Dịch Vụ Đổi Vỏ</a></li>
-                                <li><a class="dropdown-item" href="#">Hợp Tác Khác</a></li>
-                                <li><a class="dropdown-item" href="#">Đối Tác</a></li>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item my_drop_item" href="#">DỊCH VỤ ĐỔI VỎ</a></li>
+                                <li><a class="dropdown-item my_drop_item" href="#">DỊCH VỤ KHÁC</a></li>
+                                <li><a class="dropdown-item my_drop_item" href="#">ĐỐI TÁC</a></li>
                             </ul>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">Tin Tức</a>
-                        </li>
-                        <li class="nav-item"><a href="#" class="nav-link">Điểm Thanh Toán</a></li>
 
-                        <li class="nav-item"><a href="#" class="nav-link">Về Chúng Tôi</a></li>
+                        <li class="nav-item ms-4">
+                            <a class="nav-link" href="#">TIN TỨC</a>
+                        </li>
+
+                        <li class="nav-item ms-4">
+                            <a class="nav-link" href="#">ĐIỂM ĐỔI VỎ</a>
+                        </li>
+                        <li class="nav-item ms-4">
+                            <a class="nav-link" href="#">VỀ CHÚNG TÔI</a>
+                        </li>
+
                     </ul>
+
                 </div>
             </div>
         </nav>
-
     </header>
 
 
@@ -104,47 +111,44 @@
     </div>
     <!-- end slide -->
 
-    <section id="video" class="container-md mx-auto text-center p-5 my-5">
+    <section id="video" class="container-md mx-auto text-center my-5">
         <p class="px-md-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut eaque placeat architecto est
             quod perspiciatis
             ratione voluptate neque cum tempora sit recusandae quae pariatur enim, nostrum labore harum! Sit, qui.</p>
-        <iframe class="my-5 rounded" width="560" height="315" src="https://www.youtube-nocookie.com/embed/dLmyp3xMsAo"
-            frameborder="0"
+        <iframe class="my-5 page-vid" src="https://www.youtube-nocookie.com/embed/dLmyp3xMsAo" frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowfullscreen></iframe>
-
-
     </section>
 
     <section id="how_to_use" class="container-md text-center my-5 py-5">
         <h1>Sử dụng Đổi Vỏ như thế nào?</h1>
-        <div class="row row p-5 my-5">
+        <div class="row my-5">
             <div class="col-6 col-lg-3">
                 <img class="img-fluid"
                     src="https://cdn.shortpixel.ai/client/q_lossy,ret_img,w_300/https://vnpay.vn:443/wp-content/uploads/2019/03/buoc1.png"
                     alt="">
-                <h4 class="bg-primary mx-auto w-75 py-2 mt-3 text-white">Bước 1</h4>
+                <h5 class="py-md-2 mx-auto">Bước 1</h5>
                 <p>Đăng Nhập Bằng Số Điện Thoại</p>
             </div>
             <div class="col-6 col-lg-3">
                 <img class="img-fluid"
                     src="https://cdn.shortpixel.ai/client/q_lossy,ret_img,w_300/https://vnpay.vn:443/wp-content/uploads/2019/03/buoc2.png"
                     alt="">
-                <h4 class="bg-primary mx-auto w-75 py-2 mt-3  text-white">Bước 1</h4>
+                <h5 class="py-md-2 mx-auto">Bước 2</h5>
                 <p>Đăng Nhập Bằng Số Điện Thoại</p>
             </div>
             <div class="col-6 col-lg-3">
                 <img class="img-fluid"
                     src="https://cdn.shortpixel.ai/client/q_lossy,ret_img,w_300/https://vnpay.vn:443/wp-content/uploads/2019/03/buoc3.png"
                     alt="">
-                <h4 class="bg-primary mx-auto w-75 py-2 mt-3 text-white">Bước 1</h4>
+                <h5 class="py-md-2 mx-auto">Bước 3</h5>
                 <p>Đăng Nhập Bằng Số Điện Thoại</p>
             </div>
             <div class="col-6 col-lg-3">
                 <img class="img-fluid"
                     src="https://cdn.shortpixel.ai/client/q_lossy,ret_img,w_300/https://vnpay.vn:443/wp-content/uploads/2019/03/buoc4.png"
                     alt="">
-                <h4 class="bg-primary mx-auto w-75 py-2 mt-3 text-white">Bước 1</h4>
+                <h5 class="py-md-2 mx-auto">Bước 4</h5>
                 <p>Đăng Nhập Bằng Số Điện Thoại</p>
             </div>
         </div>
@@ -222,7 +226,7 @@
                 <button type="button" data-bs-target="#page_hightlight_slide" data-bs-slide-to="2" class="my_dot"
                     aria-label="Slide 3"></button>
             </div>
-            <div class="carousel-inner">
+            <div class="carousel-inner h-50">
                 <div class="carousel-item active">
                     <img src="./img/slide1.png" class="d-block w-100 img-fluid" alt="...">
                 </div>
@@ -280,74 +284,15 @@
         </div>
         <!-- end news slide -->
     </section>
-    <!-- 
-    <section id="benefit" class="container-fulid text-center my-5 py-5">
-        <h1 class="mb-5">LỢI ÍCH THANH TOÁN</h1>
-        <div class="visual mt-5">
-            <img src="https://vnpay.vn/wp-content/uploads/2019/01/imagee.png" alt="" class="img-fulid my-5 py-5">
-        </div>
-        <div class="content row py-5">
-            <div class="left_side col-6 text-end">
-                <div class="d-flex justify-content-end px-5">
-                    <h3>Dành Cho <strong>Khách Hàng</strong>
-                    </h3>
-                </div>
-                <div class="d-flex justify-content-end my-3">
-                    <p>Chỉ cần sử dụng
-                        Mobile Banking của
-                        các ngân hàng</p>
-                    <img class="img-fluid" src="https://vnpay.vn/wp-content/uploads/2019/01/11.png" alt="">
-                </div>
-                <div class="d-flex justify-content-end my-3">
-                    <p>Chỉ cần sử dụng
-                        Mobile Banking của
-                        các ngân hàng</p>
-                    <img class="img-fluid" src="https://vnpay.vn/wp-content/uploads/2019/01/11.png" alt="">
-                </div>
-                <div class="d-flex justify-content-end my-3">
-                    <p>Chỉ cần sử dụng
-                        Mobile Banking của
-                        các ngân hàng</p>
-                    <img class="img-fluid" src="https://vnpay.vn/wp-content/uploads/2019/01/11.png" alt="">
-                </div>
-            </div>
-            <div class="right_side col-6 text-start">
-
-                <div class="d-flex justify-content-start px-5">
-                    <h3>Dành Cho <strong>Đối Tác</strong>
-                    </h3>
-                </div>
-                <div class="d-flex my-3">
-                    <img class="img-fluid" src="https://vnpay.vn/wp-content/uploads/2019/01/11.png" alt="">
-                    <p>Chỉ cần sử dụng
-                        Mobile Banking của
-                        các ngân hàng</p>
-                </div>
-                <div class="d-flex my-3">
-                    <img class="img-fluid" src="https://vnpay.vn/wp-content/uploads/2019/01/11.png" alt="">
-                    <p>Chỉ cần sử dụng
-                        Mobile Banking của
-                        các ngân hàng</p>
-                </div>
-                <div class="d-flex my-3">
-                    <img class="img-fluid" src="https://vnpay.vn/wp-content/uploads/2019/01/11.png" alt="">
-                    <p>Chỉ cần sử dụng
-                        Mobile Banking của
-                        các ngân hàng</p>
-                </div>
-
-            </div>
-        </div>
-    </section> -->
 
 
     <section id="benefit" class="cotainer-md my-5 py-5">
         <h1 class="my-5 text-center">LỢI ÍCH THANH TOÁN</h1>
         <div class="visual my-5 text-center">
-            <img class="img-fluid w-50" src="https://vnpay.vn/wp-content/uploads/2019/01/imagee.png" alt=""
+            <img class="img-fluid w-md-50" src="https://vnpay.vn/wp-content/uploads/2019/01/imagee.png" alt=""
                 class="img-fulid my-5 py-5">
         </div>
-        <div class="bf-content d-flex ">
+        <div class="bf-content d-md-flex">
             <div class="bf-left-side">
                 <div class="d-flex text-end">
                     <h3>Dành Cho <strong>Khách Hàng</strong>
@@ -357,19 +302,19 @@
                     <p>Chỉ cần sử dụng
                         Mobile Banking của
                         các ngân hàng</p>
-                    <img class="img-fluid" src="https://vnpay.vn/wp-content/uploads/2019/01/11.png" alt="">
+                    <img class="img-fluid w-25" src="https://vnpay.vn/wp-content/uploads/2019/01/11.png" alt="">
                 </div>
                 <div>
                     <p>Chỉ cần sử dụng
                         Mobile Banking của
                         các ngân hàng</p>
-                    <img class="img-fluid" src="https://vnpay.vn/wp-content/uploads/2019/01/11.png" alt="">
+                    <img class="img-fluid w-25" src="https://vnpay.vn/wp-content/uploads/2019/01/11.png" alt="">
                 </div>
                 <div>
                     <p>Chỉ cần sử dụng
                         Mobile Banking của
                         các ngân hàng</p>
-                    <img class="img-fluid" src="https://vnpay.vn/wp-content/uploads/2019/01/11.png" alt="">
+                    <img class="img-fluid w-25" src="https://vnpay.vn/wp-content/uploads/2019/01/11.png" alt="">
                 </div>
             </div>
             <div class="bf-right-side">
@@ -381,94 +326,156 @@
                     <p>Chỉ cần sử dụng
                         Mobile Banking của
                         các ngân hàng</p>
-                    <img class="img-fluid" src="https://vnpay.vn/wp-content/uploads/2019/01/11.png" alt="">
+                    <img class="img-fluid w-25" src="https://vnpay.vn/wp-content/uploads/2019/01/11.png" alt="">
                 </div>
                 <div>
                     <p>Chỉ cần sử dụng
                         Mobile Banking của
                         các ngân hàng</p>
-                    <img class="img-fluid" src="https://vnpay.vn/wp-content/uploads/2019/01/11.png" alt="">
+                    <img class="img-fluid w-25" src="https://vnpay.vn/wp-content/uploads/2019/01/11.png" alt="">
                 </div>
                 <div>
                     <p>Chỉ cần sử dụng
                         Mobile Banking của
                         các ngân hàng</p>
-                    <img class="img-fluid" src="https://vnpay.vn/wp-content/uploads/2019/01/11.png" alt="">
+                    <img class="img-fluid w-25" src="https://vnpay.vn/wp-content/uploads/2019/01/11.png" alt="">
                 </div>
+
             </div>
-            
+
         </div>
     </section>
 
     <section id="other_service" class="my-5 py-5 container-md text-center">
         <h1>DỊCH VỤ KHÁC</h1>
-        <div class="row my-5 py-5">
-            <div class="content p-3 col-6 col-md-4 d-flex justify-content-between">
-                <img class="img-fluid h-50" src="https://vnpay.vn/wp-content/uploads/2019/01/icc1.png" alt="">
-                <div class="px-5 text-start">
+        <div class="row my-5 py-5 g-5">
+            <div class="content p-1 p-md-3 col-12 col-md-6 col-lg-4 d-md-flex justify-content-between">
+                <img class="img-fluid h-50 " src="https://vnpay.vn/wp-content/uploads/2019/01/icc1.png" alt="">
+                <div class="px-md-3 text-center text-md-start">
                     <h4>Mobile Banking</h4>
-                    <p>Ứng dụng Mobile Banking (ngân hàng trên di động) do VNPAY nghiên cứu và phát triển</p>
+                    <p>Ứng dụng Mobile Banking (ngân hàng trên di động) do VNPAY nghiên cứu và
+                        phát triển</p>
                 </div>
             </div>
-            <div class="content p-3 col-6 col-md-4 d-flex justify-content-between">
-                <img class="img-fluid h-50" src="https://vnpay.vn/wp-content/uploads/2019/01/icc1.png" alt="">
-                <div class="px-5 text-start">
+            <div class="content p-1 p-md-3 col-12 col-md-6 col-lg-4 d-md-flex justify-content-between">
+                <img class="img-fluid h-50 " src="https://vnpay.vn/wp-content/uploads/2019/01/icc1.png" alt="">
+                <div class="px-md-3 text-center text-md-start">
                     <h4>Mobile Banking</h4>
-                    <p>Ứng dụng Mobile Banking (ngân hàng trên di động) do VNPAY nghiên cứu và phát triển</p>
+                    <p>Ứng dụng Mobile Banking (ngân hàng trên di động) do VNPAY nghiên cứu và
+                        phát triển</p>
                 </div>
             </div>
-            <div class="content p-3 col-6 col-md-4 d-flex justify-content-between">
-                <img class="img-fluid h-50" src="https://vnpay.vn/wp-content/uploads/2019/01/icc1.png" alt="">
-                <div class="px-5 text-start">
+            <div class="content p-1 p-md-3 col-12 col-md-6 col-lg-4 d-md-flex justify-content-between">
+                <img class="img-fluid h-50 " src="https://vnpay.vn/wp-content/uploads/2019/01/icc1.png" alt="">
+                <div class="px-md-3 text-center text-md-start">
                     <h4>Mobile Banking</h4>
-                    <p>Ứng dụng Mobile Banking (ngân hàng trên di động) do VNPAY nghiên cứu và phát triển</p>
+                    <p>Ứng dụng Mobile Banking (ngân hàng trên di động) do VNPAY nghiên cứu và
+                        phát triển</p>
                 </div>
             </div>
-            <div class="content p-3 col-6 col-md-4 d-flex justify-content-between">
-                <img class="img-fluid h-50" src="https://vnpay.vn/wp-content/uploads/2019/01/icc1.png" alt="">
-                <div class="px-5 text-start">
+            <div class="content p-1 p-md-3 col-12 col-md-6 col-lg-4 d-md-flex justify-content-between">
+                <img class="img-fluid h-50 " src="https://vnpay.vn/wp-content/uploads/2019/01/icc1.png" alt="">
+                <div class="px-md-3 text-center text-md-start">
                     <h4>Mobile Banking</h4>
-                    <p>Ứng dụng Mobile Banking (ngân hàng trên di động) do VNPAY nghiên cứu và phát triển</p>
+                    <p>Ứng dụng Mobile Banking (ngân hàng trên di động) do VNPAY nghiên cứu và
+                        phát triển</p>
                 </div>
             </div>
-            <div class="content p-3 col-6 col-md-4 d-flex justify-content-between">
-                <img class="img-fluid h-50" src="https://vnpay.vn/wp-content/uploads/2019/01/icc1.png" alt="">
-                <div class="px-5 text-start">
+            <div class="content p-1 p-md-3 col-12 col-md-6 col-lg-4 d-md-flex justify-content-between">
+                <img class="img-fluid h-50 " src="https://vnpay.vn/wp-content/uploads/2019/01/icc1.png" alt="">
+                <div class="px-md-3 text-center text-md-start">
                     <h4>Mobile Banking</h4>
-                    <p>Ứng dụng Mobile Banking (ngân hàng trên di động) do VNPAY nghiên cứu và phát triển</p>
+                    <p>Ứng dụng Mobile Banking (ngân hàng trên di động) do VNPAY nghiên cứu và
+                        phát triển</p>
                 </div>
             </div>
-            <div class="content p-3 col-6 col-md-4 d-flex justify-content-between">
-                <img class="img-fluid h-50" src="https://vnpay.vn/wp-content/uploads/2019/01/icc1.png" alt="">
-                <div class="px-5 text-start">
+            <div class="content p-1 p-md-3 col-12 col-md-6 col-lg-4 d-md-flex justify-content-between">
+                <img class="img-fluid h-50 " src="https://vnpay.vn/wp-content/uploads/2019/01/icc1.png" alt="">
+                <div class="px-md-3 text-center text-md-start">
                     <h4>Mobile Banking</h4>
-                    <p>Ứng dụng Mobile Banking (ngân hàng trên di động) do VNPAY nghiên cứu và phát triển</p>
+                    <p>Ứng dụng Mobile Banking (ngân hàng trên di động) do VNPAY nghiên cứu và
+                        phát triển</p>
                 </div>
             </div>
-            <div class="content p-3 col-6 col-md-4 d-flex justify-content-between">
-                <img class="img-fluid h-50" src="https://vnpay.vn/wp-content/uploads/2019/01/icc1.png" alt="">
-                <div class="px-5 text-start">
-                    <h4>Mobile Banking</h4>
-                    <p>Ứng dụng Mobile Banking (ngân hàng trên di động) do VNPAY nghiên cứu và phát triển</p>
-                </div>
-            </div>
-            <div class="content p-3 col-6 col-md-4 d-flex justify-content-between">
-                <img class="img-fluid h-50" src="https://vnpay.vn/wp-content/uploads/2019/01/icc1.png" alt="">
-                <div class="px-5 text-start">
-                    <h4>Mobile Banking</h4>
-                    <p>Ứng dụng Mobile Banking (ngân hàng trên di động) do VNPAY nghiên cứu và phát triển</p>
-                </div>
-            </div>
-            <div class="content p-3 col-6 col-md-4 d-flex justify-content-between">
-                <img class="img-fluid h-50" src="https://vnpay.vn/wp-content/uploads/2019/01/icc1.png" alt="">
-                <div class="px-5 text-start">
-                    <h4>Mobile Banking</h4>
-                    <p>Ứng dụng Mobile Banking (ngân hàng trên di động) do VNPAY nghiên cứu và phát triển</p>
-                </div>
-            </div>
+
+
         </div>
     </section>
 
+    <section class="container-md">
+        <h1 class="text-center ">ĐĂNG KÝ TƯ VẤN</h1>
+        <div class="row my-5">
+            <div class="leave_question col-12 col-lg-6">
+                <form action="" method="">
+                    <input type="text" class="form-control mb-4" placeholder="Họ Và Tên" aria-label="Username"
+                        aria-describedby="basic-addon1">
+                    <input type="text" class="form-control mb-4" placeholder="Số Điên Thoại" aria-label="Username"
+                        aria-describedby="basic-addon1">
+                    <input type="email" class="form-control mb-4" placeholder="Email" aria-label="Username"
+                        aria-describedby="basic-addon1">
+                    <select class="form-select mb-4" id="inputGroupSelect01">
+                        <option selected>Bạn Đang Sử Dụng Phần Mềm Nào</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                    </select>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3">Ghi chú</textarea>
+
+                    <div class="row">
+                        <p class="my-4"> Bạn muốn tư vấn dịch vụ mảng nào?</p>
+
+                        <div class="col-12 col-md-6">
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                                <label class="form-check-label" for="inlineCheckbox1">Dịch vụ VNPAY-QR</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                                <label class="form-check-label" for="inlineCheckbox2">Dịch vụ cổng thanh toán</label>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                                <label class="form-check-label" for="inlineCheckbox1">Dịch vụ cá nhân</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                                <label class="form-check-label" for="inlineCheckbox2">Dịch vụ khác</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-check form-check-inline my-4">
+                        <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                        <label class="form-check-label" for="inlineCheckbox1">Tôi đã đọc và đồng ý với các điều khoản về
+                            chính sách bảo</label>
+                    </div>
+                    <div class="mb-5">
+                        <button type="submit" class="btn btn-primary">Giửi</button>
+                    </div>
+
+                </form>
+            </div>
+            <div class="faq col-12 col-lg-6">
+                <h4>Câu Hỏi Thường Gặp</h4>
+                <p>
+                    <p class="" data-bs-toggle="collapse" href="#collapseExample" role="button"
+                        aria-expanded="false" aria-controls="collapseExample">
+                        Link with href
+                </p>
+                </p>
+                <div class="collapse" id="collapseExample">
+                    <div class="card card-body">
+                        Some placeholder content for the collapse component. This panel is hidden by default but
+                        revealed when the user activates the relevant trigger.
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </section>
 
     <footer id="page-footer" class="container-fluid">
 

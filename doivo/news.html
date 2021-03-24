@@ -16,56 +16,329 @@
     <title>Doi Vo</title>
 </head>
 
-<body>
+<body class="bg-light">
     <header id="page-header">
         <div class="container-md d-none pt-2 d-sm-flex justify-content-end">
             <button class="btn btn-sm btn-outline-primary btn-custom ">Khuyến Mãi</button>
             <button class="btn btn-sm btn-outline-primary btn-custom mx-3">Đăng Nhận Đăng Ký</button>
             <button class="btn btn-sm btn-outline-primary btn-custom ">Đăng Ký Tư Vấn</button>
         </div>
-        <nav class="navbar navbar-expand-lg navbar-light">
-            <div class="container">
-                <a class="navbar-brand" href="#" style="width:8rem">
-                    <img src="./img/logo.svg" alt="logo" class="img-fulid">
-                </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
-                    aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+        <nav class="navbar navbar-expand-lg navbar-light bg-white mb-4 py-3  ">
+            <div class="container-md">
+                <a class="navbar-brand" href="#" style="font-size: 2rem;">Doivo</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse d-flex justify-content-end" id="navbarScroll">
-                    <ul class="navbar-nav my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0 float-right">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Trang Chủ</a>
+                            <a class="nav-link active" aria-current="page" href="#">TRANG CHỦ</a>
                         </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button"
-                                data-bs-toggle="dropdown" aria-expanded="false">
-                                Hợp Tác
+                        <li class="nav-item dropdown ms-4">
+                            <a class="nav-link" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                HỢP TÁC
+
+                                <i class="fas fa-chevron-down"></i>
                             </a>
-                            <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
-                                <li><a class="dropdown-item" href="#">Dịch Vụ Đổi Vỏ</a></li>
-                                <li><a class="dropdown-item" href="#">Hợp Tác Khác</a></li>
-                                <li><a class="dropdown-item" href="#">Đối Tác</a></li>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item my_drop_item" href="#">DỊCH VỤ ĐỔI VỎ</a></li>
+                                <li><a class="dropdown-item my_drop_item" href="#">DỊCH VỤ KHÁC</a></li>
+                                <li><a class="dropdown-item my_drop_item" href="#">ĐỐI TÁC</a></li>
                             </ul>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">Tin Tức</a>
-                        </li>
-                        <li class="nav-item"><a href="#" class="nav-link">Điểm Thanh Toán</a></li>
 
-                        <li class="nav-item"><a href="#" class="nav-link">Về Chúng Tôi</a></li>
+                        <li class="nav-item ms-4">
+                            <a class="nav-link" href="#">TIN TỨC</a>
+                        </li>
+
+                        <li class="nav-item ms-4">
+                            <a class="nav-link" href="#">ĐIỂM ĐỔI VỎ</a>
+                        </li>
+                        <li class="nav-item ms-4">
+                            <a class="nav-link" href="#">VỀ CHÚNG TÔI</a>
+                        </li>
+
                     </ul>
+
                 </div>
             </div>
         </nav>
-
     </header>
 
 
 
-    <footer id="page-footer" class="container-fluid">
 
-    </footer>
+
+    <section id="tin_khuyen_mai" class="container-md py-5 my-5">
+        <h1 class="text-center">TIN KHUYẾN MẠI</h1>
+        <div class="row">
+            <div class="col-6 col-lg-3 p-0 card">
+                <img src="https://cdn.shortpixel.ai/client/q_lossy,ret_img,w_1024/https://vnpay.vn:443/wp-content/uploads/2021/03/Cac-buoc-dat-ve-xe_1080x1920-Mobile-Banking-1-1024x837.png"
+                    class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Hướng dẫn Đặt vé xe khách trên ứng dụng ngân hàng (Mobile Banking) dễ dàng,
+                        nhanh chóng, tiện
+                        lợi</h5>
+                    <p class="card-text">22/03/2021</p>
+                    <p>*Dịch vụ Đặt vé xe khách là sự hợp tác giữa Công ty cổ phần Giải pháp thanh toán Việt Nam VNPAY
+                    </p>
+                </div>
+            </div>
+          
+        </div>
+
+
+        <nav aria-label="Page navigation example" class="d-flex justify-content-center">
+            <ul class="pagination">
+                <li class="page-item">
+                    <a class="page-link" href="#" aria-label="Previous">
+                        <span aria-hidden="true">&laquo;</span>
+                    </a>
+                </li>
+                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item">
+                    <a class="page-link" href="#" aria-label="Next">
+                        <span aria-hidden="true">&raquo;</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+    </section>
+
+
+    <section id="tin_tuc_su_kien" class="container-md py-5 my-5">
+        <h1 class="text-center">TIN TỨC SỰ KIỆN</h1>
+        <div class="row">
+            <div class="new_container col-6 col-lg-3 g-5">
+                <img class="img-fluid"
+                    src="https://cdn.shortpixel.ai/client/q_lossy,ret_img,w_1024/https://vnpay.vn:443/wp-content/uploads/2021/03/Cac-buoc-dat-ve-xe_1080x1920-Mobile-Banking-1-1024x837.png"
+                    alt="news visual">
+                <h5>Hướng dẫn Đặt vé xe khách trên ứng dụng ngân hàng (Mobile Banking) dễ dàng, nhanh chóng, tiện lợi
+                </h5>
+                <p>22/03/2021</p>
+                <p>*Dịch vụ Đặt vé xe khách là sự hợp tác giữa Công ty cổ phần Giải pháp thanh toán Việt Nam VNPAY</p>
+            </div>
+            <div class="new_container col-6 col-lg-3 g-5">
+                <img class="img-fluid"
+                    src="https://cdn.shortpixel.ai/client/q_lossy,ret_img,w_1024/https://vnpay.vn:443/wp-content/uploads/2021/03/Cac-buoc-dat-ve-xe_1080x1920-Mobile-Banking-1-1024x837.png"
+                    alt="news visual">
+                <h5>Hướng dẫn Đặt vé xe khách trên ứng dụng ngân hàng (Mobile Banking) dễ dàng, nhanh chóng, tiện lợi
+                </h5>
+                <p>22/03/2021</p>
+                <p>*Dịch vụ Đặt vé xe khách là sự hợp tác giữa Công ty cổ phần Giải pháp thanh toán Việt Nam VNPAY</p>
+            </div>
+            <div class="new_container col-6 col-lg-3 g-5">
+                <img class="img-fluid"
+                    src="https://cdn.shortpixel.ai/client/q_lossy,ret_img,w_1024/https://vnpay.vn:443/wp-content/uploads/2021/03/Cac-buoc-dat-ve-xe_1080x1920-Mobile-Banking-1-1024x837.png"
+                    alt="news visual">
+                <h5>Hướng dẫn Đặt vé xe khách trên ứng dụng ngân hàng (Mobile Banking) dễ dàng, nhanh chóng, tiện lợi
+                </h5>
+                <p>22/03/2021</p>
+                <p>*Dịch vụ Đặt vé xe khách là sự hợp tác giữa Công ty cổ phần Giải pháp thanh toán Việt Nam VNPAY</p>
+            </div>
+            <div class="new_container col-6 col-lg-3 g-5">
+                <img class="img-fluid"
+                    src="https://cdn.shortpixel.ai/client/q_lossy,ret_img,w_1024/https://vnpay.vn:443/wp-content/uploads/2021/03/Cac-buoc-dat-ve-xe_1080x1920-Mobile-Banking-1-1024x837.png"
+                    alt="news visual">
+                <h5>Hướng dẫn Đặt vé xe khách trên ứng dụng ngân hàng (Mobile Banking) dễ dàng, nhanh chóng, tiện lợi
+                </h5>
+                <p>22/03/2021</p>
+                <p>*Dịch vụ Đặt vé xe khách là sự hợp tác giữa Công ty cổ phần Giải pháp thanh toán Việt Nam VNPAY</p>
+            </div>
+            <div class="new_container col-6 col-lg-3 g-5">
+                <img class="img-fluid"
+                    src="https://cdn.shortpixel.ai/client/q_lossy,ret_img,w_1024/https://vnpay.vn:443/wp-content/uploads/2021/03/Cac-buoc-dat-ve-xe_1080x1920-Mobile-Banking-1-1024x837.png"
+                    alt="news visual">
+                <h5>Hướng dẫn Đặt vé xe khách trên ứng dụng ngân hàng (Mobile Banking) dễ dàng, nhanh chóng, tiện lợi
+                </h5>
+                <p>22/03/2021</p>
+                <p>*Dịch vụ Đặt vé xe khách là sự hợp tác giữa Công ty cổ phần Giải pháp thanh toán Việt Nam VNPAY</p>
+            </div>
+            <div class="new_container col-6 col-lg-3 g-5">
+                <img class="img-fluid"
+                    src="https://cdn.shortpixel.ai/client/q_lossy,ret_img,w_1024/https://vnpay.vn:443/wp-content/uploads/2021/03/Cac-buoc-dat-ve-xe_1080x1920-Mobile-Banking-1-1024x837.png"
+                    alt="news visual">
+                <h5>Hướng dẫn Đặt vé xe khách trên ứng dụng ngân hàng (Mobile Banking) dễ dàng, nhanh chóng, tiện lợi
+                </h5>
+                <p>22/03/2021</p>
+                <p>*Dịch vụ Đặt vé xe khách là sự hợp tác giữa Công ty cổ phần Giải pháp thanh toán Việt Nam VNPAY</p>
+            </div>
+            <div class="new_container col-6 col-lg-3 g-5">
+                <img class="img-fluid"
+                    src="https://cdn.shortpixel.ai/client/q_lossy,ret_img,w_1024/https://vnpay.vn:443/wp-content/uploads/2021/03/Cac-buoc-dat-ve-xe_1080x1920-Mobile-Banking-1-1024x837.png"
+                    alt="news visual">
+                <h5>Hướng dẫn Đặt vé xe khách trên ứng dụng ngân hàng (Mobile Banking) dễ dàng, nhanh chóng, tiện lợi
+                </h5>
+                <p>22/03/2021</p>
+                <p>*Dịch vụ Đặt vé xe khách là sự hợp tác giữa Công ty cổ phần Giải pháp thanh toán Việt Nam VNPAY</p>
+            </div>
+            <div class="new_container col-6 col-lg-3 g-5">
+                <img class="img-fluid"
+                    src="https://cdn.shortpixel.ai/client/q_lossy,ret_img,w_1024/https://vnpay.vn:443/wp-content/uploads/2021/03/Cac-buoc-dat-ve-xe_1080x1920-Mobile-Banking-1-1024x837.png"
+                    alt="news visual">
+                <h5>Hướng dẫn Đặt vé xe khách trên ứng dụng ngân hàng (Mobile Banking) dễ dàng, nhanh chóng, tiện lợi
+                </h5>
+                <p>22/03/2021</p>
+                <p>*Dịch vụ Đặt vé xe khách là sự hợp tác giữa Công ty cổ phần Giải pháp thanh toán Việt Nam VNPAY</p>
+            </div>
+
+
+            <nav aria-label="Page navigation example" class="d-flex justify-content-center">
+                <ul class="pagination">
+                    <li class="page-item">
+                        <a class="page-link" href="#" aria-label="Previous">
+                            <span aria-hidden="true">&laquo;</span>
+                        </a>
+                    </li>
+                    <li class="page-item"><a class="page-link" href="#">1</a></li>
+                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                    <li class="page-item">
+                        <a class="page-link" href="#" aria-label="Next">
+                            <span aria-hidden="true">&raquo;</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+
+    </section>
+
+
+    <section id="tin_noi_bo" class="container-md py-5 my-5">
+        <h1 class="text-center">TIN NỘI BỘ</h1>
+        <div class="row">
+            <div class="new_container col-6 col-lg-3 g-5">
+                <img class="img-fluid"
+                    src="https://cdn.shortpixel.ai/client/q_lossy,ret_img,w_1024/https://vnpay.vn:443/wp-content/uploads/2021/03/Cac-buoc-dat-ve-xe_1080x1920-Mobile-Banking-1-1024x837.png"
+                    alt="news visual">
+                <h5>Hướng dẫn Đặt vé xe khách trên ứng dụng ngân hàng (Mobile Banking) dễ dàng, nhanh chóng, tiện lợi
+                </h5>
+                <p>22/03/2021</p>
+                <p>*Dịch vụ Đặt vé xe khách là sự hợp tác giữa Công ty cổ phần Giải pháp thanh toán Việt Nam VNPAY</p>
+            </div>
+            <div class="new_container col-6 col-lg-3 g-5">
+                <img class="img-fluid"
+                    src="https://cdn.shortpixel.ai/client/q_lossy,ret_img,w_1024/https://vnpay.vn:443/wp-content/uploads/2021/03/Cac-buoc-dat-ve-xe_1080x1920-Mobile-Banking-1-1024x837.png"
+                    alt="news visual">
+                <h5>Hướng dẫn Đặt vé xe khách trên ứng dụng ngân hàng (Mobile Banking) dễ dàng, nhanh chóng, tiện lợi
+                </h5>
+                <p>22/03/2021</p>
+                <p>*Dịch vụ Đặt vé xe khách là sự hợp tác giữa Công ty cổ phần Giải pháp thanh toán Việt Nam VNPAY</p>
+            </div>
+            <div class="new_container col-6 col-lg-3 g-5">
+                <img class="img-fluid"
+                    src="https://cdn.shortpixel.ai/client/q_lossy,ret_img,w_1024/https://vnpay.vn:443/wp-content/uploads/2021/03/Cac-buoc-dat-ve-xe_1080x1920-Mobile-Banking-1-1024x837.png"
+                    alt="news visual">
+                <h5>Hướng dẫn Đặt vé xe khách trên ứng dụng ngân hàng (Mobile Banking) dễ dàng, nhanh chóng, tiện lợi
+                </h5>
+                <p>22/03/2021</p>
+                <p>*Dịch vụ Đặt vé xe khách là sự hợp tác giữa Công ty cổ phần Giải pháp thanh toán Việt Nam VNPAY</p>
+            </div>
+            <div class="new_container col-6 col-lg-3 g-5">
+                <img class="img-fluid"
+                    src="https://cdn.shortpixel.ai/client/q_lossy,ret_img,w_1024/https://vnpay.vn:443/wp-content/uploads/2021/03/Cac-buoc-dat-ve-xe_1080x1920-Mobile-Banking-1-1024x837.png"
+                    alt="news visual">
+                <h5>Hướng dẫn Đặt vé xe khách trên ứng dụng ngân hàng (Mobile Banking) dễ dàng, nhanh chóng, tiện lợi
+                </h5>
+                <p>22/03/2021</p>
+                <p>*Dịch vụ Đặt vé xe khách là sự hợp tác giữa Công ty cổ phần Giải pháp thanh toán Việt Nam VNPAY</p>
+            </div>
+            <div class="new_container col-6 col-lg-3 g-5">
+                <img class="img-fluid"
+                    src="https://cdn.shortpixel.ai/client/q_lossy,ret_img,w_1024/https://vnpay.vn:443/wp-content/uploads/2021/03/Cac-buoc-dat-ve-xe_1080x1920-Mobile-Banking-1-1024x837.png"
+                    alt="news visual">
+                <h5>Hướng dẫn Đặt vé xe khách trên ứng dụng ngân hàng (Mobile Banking) dễ dàng, nhanh chóng, tiện lợi
+                </h5>
+                <p>22/03/2021</p>
+                <p>*Dịch vụ Đặt vé xe khách là sự hợp tác giữa Công ty cổ phần Giải pháp thanh toán Việt Nam VNPAY</p>
+            </div>
+            <div class="new_container col-6 col-lg-3 g-5">
+                <img class="img-fluid"
+                    src="https://cdn.shortpixel.ai/client/q_lossy,ret_img,w_1024/https://vnpay.vn:443/wp-content/uploads/2021/03/Cac-buoc-dat-ve-xe_1080x1920-Mobile-Banking-1-1024x837.png"
+                    alt="news visual">
+                <h5>Hướng dẫn Đặt vé xe khách trên ứng dụng ngân hàng (Mobile Banking) dễ dàng, nhanh chóng, tiện lợi
+                </h5>
+                <p>22/03/2021</p>
+                <p>*Dịch vụ Đặt vé xe khách là sự hợp tác giữa Công ty cổ phần Giải pháp thanh toán Việt Nam VNPAY</p>
+            </div>
+            <div class="new_container col-6 col-lg-3 g-5">
+                <img class="img-fluid"
+                    src="https://cdn.shortpixel.ai/client/q_lossy,ret_img,w_1024/https://vnpay.vn:443/wp-content/uploads/2021/03/Cac-buoc-dat-ve-xe_1080x1920-Mobile-Banking-1-1024x837.png"
+                    alt="news visual">
+                <h5>Hướng dẫn Đặt vé xe khách trên ứng dụng ngân hàng (Mobile Banking) dễ dàng, nhanh chóng, tiện lợi
+                </h5>
+                <p>22/03/2021</p>
+                <p>*Dịch vụ Đặt vé xe khách là sự hợp tác giữa Công ty cổ phần Giải pháp thanh toán Việt Nam VNPAY</p>
+            </div>
+            <div class="new_container col-6 col-lg-3 g-5">
+                <img class="img-fluid"
+                    src="https://cdn.shortpixel.ai/client/q_lossy,ret_img,w_1024/https://vnpay.vn:443/wp-content/uploads/2021/03/Cac-buoc-dat-ve-xe_1080x1920-Mobile-Banking-1-1024x837.png"
+                    alt="news visual">
+                <h5>Hướng dẫn Đặt vé xe khách trên ứng dụng ngân hàng (Mobile Banking) dễ dàng, nhanh chóng, tiện lợi
+                </h5>
+                <p>22/03/2021</p>
+                <p>*Dịch vụ Đặt vé xe khách là sự hợp tác giữa Công ty cổ phần Giải pháp thanh toán Việt Nam VNPAY</p>
+            </div>
+
+
+            <nav aria-label="Page navigation example" class="d-flex justify-content-center">
+                <ul class="pagination">
+                    <li class="page-item">
+                        <a class="page-link" href="#" aria-label="Previous">
+                            <span aria-hidden="true">&laquo;</span>
+                        </a>
+                    </li>
+                    <li class="page-item"><a class="page-link" href="#">1</a></li>
+                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                    <li class="page-item">
+                        <a class="page-link" href="#" aria-label="Next">
+                            <span aria-hidden="true">&raquo;</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+
+    </section>
+
+
+    <div id="page_hightlight_slide" class="carousel slide mx-auto my-5 p-md-5 container-md " data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#page_hightlight_slide" data-bs-slide-to="0" class="active my_dot"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#page_hightlight_slide" data-bs-slide-to="1" class="my_dot"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#page_hightlight_slide" data-bs-slide-to="2" class="my_dot"
+                aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner h-50">
+            <div class="carousel-item active">
+                <img src="./img/slide1.png " class="d-block w-100 img-fluid " alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="./img/slide2.png" class="d-block w-100 img-fluid" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="./img/slide3.jpg" class="d-block w-100 img-fluid" alt="...">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#page_hightlight_slide"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#page_hightlight_slide"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous">

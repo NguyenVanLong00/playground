@@ -3,6 +3,7 @@
 
 
 
+
 $primary-color:#2dea8f;
 $dark-primary-color:#24b273;
 $highlight-color:#167a8b;
@@ -48,6 +49,11 @@ h1::after {
     /* This creates some space between the element and the border. */
     border-bottom: 4px solid $highlight-color;
 }
+
+p {
+    color: #6e6e6e;
+}
+
 
 .btn-custom {
     border: none;
@@ -126,12 +132,56 @@ h1::after {
 }
 
 
+#page-header {
+    nav {
+        a {
+            font-size: 1.2rem;
+        }
+        .my_drop_item {
+            width: 17rem;
+            color:$white-color;
+            padding: 0.5rem 2rem;
+        }
+        .my_drop_item:hover{
+            background: #3074e0;
+        }
+
+        .dropdown-menu{
+            background: #0f55c5;
+            border:none;
+            border-radius: 0;
+            padding:0;
+        }
+        .dropdown:hover .dropdown-menu {
+            display: block;
+            margin-top: 0; // remove the gap so it doesn't close
+        }
+    }
+}
+
+.page-vid {
+
+    border-radius: 2rem;
+}
 
 #how_to_use {
     div {
         div {
             img:hover {
                 animation: moveUpAndDown 3s infinite;
+            }
+
+            h5 {
+                background: #0052D4;
+                /* fallback for old browsers */
+                background: -webkit-linear-gradient(to right, #6FB1FC, #4364F7, #0052D4);
+                /* Chrome 10-25, Safari 5.1-6 */
+                background: linear-gradient(to right, #6FB1FC, #4364F7, #0052D4);
+                /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+                color: $white-color;
+                max-width: 10rem;
+                border-radius: 2px;
             }
         }
     }
@@ -144,7 +194,10 @@ h1::after {
     border-top-right-radius: 2rem;
     width: 22rem;
     height: 15rem;
-    background-color: greenyellow;
+    background: #FC466B;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #3F5EFB, #FC466B);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #3F5EFB, #FC466B); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
     background-position: center;
     background-size: cover;
 
@@ -171,7 +224,8 @@ h1::after {
     }
 
     .bf-content {
-        padding:5rem 0;
+        padding: 5rem 0;
+
         div {
             flex: 1;
             flex-direction: column;
@@ -179,64 +233,77 @@ h1::after {
             div {
                 padding: 1rem 2rem;
                 display: flex;
-                justify-content:flex-end;
+                justify-content: flex-end;
                 align-items: center;
             }
 
-            h3{
-                display:flex;
+            h3 {
+                background: #0052D4;
+                /* fallback for old browsers */
+                background: -webkit-linear-gradient(to right, #6FB1FC, #4364F7, #0052D4);
+                /* Chrome 10-25, Safari 5.1-6 */
+                background: linear-gradient(to right, #6FB1FC, #4364F7, #0052D4);
+                /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+                display: flex;
                 flex-direction: column;
-                justify-content:center;
-                align-items:center;
+                justify-content: center;
+                align-items: center;
                 color: white;
-                background:#2464dbe7;
-                width:15rem;
-                height:6rem;
+                width: 15rem;
+                height: 6rem;
                 border-radius: 2px;
                 font-size: 1.3rem;
-                font-weight:400;
-                strong{
+                font-weight: 400;
+
+                strong {
                     font-size: 1.5rem;
                     font-weight: 500;
                 }
             }
 
-            img {
-                width: 7rem;
-            }
-
             p {
                 display: inline-block;
-                max-width: 13rem;
                 color: $highlight-color;
+                max-width: 20rem;
                 font-size: 1.3rem;
                 font-weight: 500;
                 text-shadow: 0 1px 2px rgb(79, 112, 204);
-                margin:0 3rem;
+            }
 
+            img {
+                max-width: 7rem;
             }
         }
 
         .bf-left-side {
-            padding-right: 1.5rem;
+
             div {
                 flex-direction: row;
-                p{
-                    direction:rtl;
+
+                p {
+                    direction: rtl;
+                    margin-right: 1rem;
                 }
-                img:hover{
-                    animation: moveLeft 0.5s  ;
+
+                img:hover {
+                    animation: moveLeft 0.5s;
                 }
             }
         }
 
         .bf-right-side {
-            padding-left: 1.5rem;
+
             div {
                 flex-direction: row-reverse;
             }
-            img:hover{
-                animation: moveRight 0.5s  ;
+
+            p {
+                margin-left: 1rem;
+            }
+
+            img:hover {
+                animation: moveRight 0.5s;
             }
 
         }
@@ -269,13 +336,13 @@ h1::after {
     .left_side {
         background: rgb(209, 71, 209);
         min-height: 10rem;
-       
+
     }
 
     .right_side {
         background: rgb(110, 44, 110);
         min-height: 10rem;
-        
+
         p {
             display: none;
         }
@@ -286,4 +353,31 @@ h1::after {
 footer {
     background-color: #2358bb;
     min-height: 20rem;
+}
+
+// news page 
+
+.new_container {
+    // h5 {
+    //     color: $highlight-color;
+    // }
+
+    // .card-body {
+        
+    // }
+    // :nth-child(3) {
+    //     color: rgb(168, 168, 168);
+    // }
+
+    // :nth-child(4) {
+    //     font-size: 1.2rem;
+    // }
+
+}
+
+@media all and (min-width:760px) {
+    .page-vid {
+        width: 35rem;
+        height: 20rem;
+    }
 }

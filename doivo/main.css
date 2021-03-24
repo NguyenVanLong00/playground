@@ -31,6 +31,10 @@ h1::after {
   border-bottom: 4px solid #167a8b;
 }
 
+p {
+  color: #6e6e6e;
+}
+
 .btn-custom {
   border: none;
   color: #243d44;
@@ -91,8 +95,45 @@ h1::after {
     transform: translateX(0%);
   }
 }
+#page-header nav a {
+  font-size: 1.2rem;
+}
+#page-header nav .my_drop_item {
+  width: 17rem;
+  color: #fff;
+  padding: 0.5rem 2rem;
+}
+#page-header nav .my_drop_item:hover {
+  background: #3074e0;
+}
+#page-header nav .dropdown-menu {
+  background: #0f55c5;
+  border: none;
+  border-radius: 0;
+  padding: 0;
+}
+#page-header nav .dropdown:hover .dropdown-menu {
+  display: block;
+  margin-top: 0;
+}
+
+.page-vid {
+  border-radius: 2rem;
+}
+
 #how_to_use div div img:hover {
   animation: moveUpAndDown 3s infinite;
+}
+#how_to_use div div h5 {
+  background: #0052D4;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #6FB1FC, #4364F7, #0052D4);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #6FB1FC, #4364F7, #0052D4);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  color: #fff;
+  max-width: 10rem;
+  border-radius: 2px;
 }
 
 .news_container {
@@ -101,7 +142,12 @@ h1::after {
   border-top-right-radius: 2rem;
   width: 22rem;
   height: 15rem;
-  background-color: greenyellow;
+  background: #FC466B;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #3F5EFB, #FC466B);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #3F5EFB, #FC466B);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   background-position: center;
   background-size: cover;
 }
@@ -136,12 +182,17 @@ h1::after {
   align-items: center;
 }
 #benefit .bf-content div h3 {
+  background: #0052D4;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #6FB1FC, #4364F7, #0052D4);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #6FB1FC, #4364F7, #0052D4);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   color: white;
-  background: #2464dbe7;
   width: 15rem;
   height: 6rem;
   border-radius: 2px;
@@ -152,35 +203,32 @@ h1::after {
   font-size: 1.5rem;
   font-weight: 500;
 }
-#benefit .bf-content div img {
-  width: 7rem;
-}
 #benefit .bf-content div p {
   display: inline-block;
-  max-width: 13rem;
   color: #167a8b;
+  max-width: 20rem;
   font-size: 1.3rem;
   font-weight: 500;
   text-shadow: 0 1px 2px #4f70cc;
-  margin: 0 3rem;
 }
-#benefit .bf-content .bf-left-side {
-  padding-right: 1.5rem;
+#benefit .bf-content div img {
+  max-width: 7rem;
 }
 #benefit .bf-content .bf-left-side div {
   flex-direction: row;
 }
 #benefit .bf-content .bf-left-side div p {
   direction: rtl;
+  margin-right: 1rem;
 }
 #benefit .bf-content .bf-left-side div img:hover {
   animation: moveLeft 0.5s;
 }
-#benefit .bf-content .bf-right-side {
-  padding-left: 1.5rem;
-}
 #benefit .bf-content .bf-right-side div {
   flex-direction: row-reverse;
+}
+#benefit .bf-content .bf-right-side p {
+  margin-left: 1rem;
 }
 #benefit .bf-content .bf-right-side img:hover {
   animation: moveRight 0.5s;
@@ -217,6 +265,13 @@ h1::after {
 footer {
   background-color: #2358bb;
   min-height: 20rem;
+}
+
+@media all and (min-width: 760px) {
+  .page-vid {
+    width: 35rem;
+    height: 20rem;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */

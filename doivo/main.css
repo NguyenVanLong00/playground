@@ -13,6 +13,24 @@ body {
   border-top: 3px solid #167a8b;
 }
 
+h1 {
+  color: #167a8b;
+}
+
+h1::after {
+  content: "";
+  /* This is necessary for the pseudo element to work. */
+  display: block;
+  /* This will put the pseudo element on its own line. */
+  margin: 0 auto;
+  /* This will center the border. */
+  width: 10rem;
+  /* Change this to whatever width you want. */
+  padding-top: 20px;
+  /* This creates some space between the element and the border. */
+  border-bottom: 4px solid #167a8b;
+}
+
 .btn-custom {
   border: none;
   color: #243d44;
@@ -27,6 +45,50 @@ body {
   }
   100% {
     transform: translateY(0%);
+  }
+}
+@keyframes moveUpAndDown2 {
+  0% {
+    transform: translateY(0%);
+  }
+  50% {
+    transform: translateY(-5%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
+@keyframes moveUpAndDown3 {
+  0% {
+    transform: translateY(0%);
+  }
+  50% {
+    transform: translateY(15%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
+@keyframes moveRight {
+  0% {
+    transform: translateX(0%);
+  }
+  50% {
+    transform: translateX(5%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+@keyframes moveLeft {
+  0% {
+    transform: translateX(0%);
+  }
+  50% {
+    transform: translateX(-5%);
+  }
+  100% {
+    transform: translateX(0%);
   }
 }
 #how_to_use div div img:hover {
@@ -55,6 +117,106 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   overflow: hidden;
+}
+
+#benefit .visual img:hover {
+  animation: moveUpAndDown2 3s infinite;
+}
+#benefit .bf-content {
+  padding: 5rem 0;
+}
+#benefit .bf-content div {
+  flex: 1;
+  flex-direction: column;
+}
+#benefit .bf-content div div {
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+#benefit .bf-content div h3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background: #2464dbe7;
+  width: 15rem;
+  height: 6rem;
+  border-radius: 2px;
+  font-size: 1.3rem;
+  font-weight: 400;
+}
+#benefit .bf-content div h3 strong {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+#benefit .bf-content div img {
+  width: 7rem;
+}
+#benefit .bf-content div p {
+  display: inline-block;
+  max-width: 13rem;
+  color: #167a8b;
+  font-size: 1.3rem;
+  font-weight: 500;
+  text-shadow: 0 1px 2px #4f70cc;
+  margin: 0 3rem;
+}
+#benefit .bf-content .bf-left-side {
+  padding-right: 1.5rem;
+}
+#benefit .bf-content .bf-left-side div {
+  flex-direction: row;
+}
+#benefit .bf-content .bf-left-side div p {
+  direction: rtl;
+}
+#benefit .bf-content .bf-left-side div img:hover {
+  animation: moveLeft 0.5s;
+}
+#benefit .bf-content .bf-right-side {
+  padding-left: 1.5rem;
+}
+#benefit .bf-content .bf-right-side div {
+  flex-direction: row-reverse;
+}
+#benefit .bf-content .bf-right-side img:hover {
+  animation: moveRight 0.5s;
+}
+
+#other_service img:hover {
+  animation: moveUpAndDown3 2s infinite;
+}
+#other_service .content {
+  transition: 0.3s;
+}
+#other_service .content h4 {
+  color: #167a8b;
+}
+#other_service .content:hover {
+  background-color: #5fd0e965;
+}
+
+#contact {
+  color: #fff;
+}
+#contact .left_side {
+  background: #d147d1;
+  min-height: 10rem;
+}
+#contact .right_side {
+  background: #6e2c6e;
+  min-height: 10rem;
+}
+#contact .right_side p {
+  display: none;
+}
+
+footer {
+  background-color: #2358bb;
+  min-height: 20rem;
 }
 
 /*# sourceMappingURL=main.css.map */

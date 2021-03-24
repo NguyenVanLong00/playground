@@ -26,6 +26,7 @@ $('.owl-carousel').owlCarousel({
         },
         786: {
             items: 3,
+            slideBy:3,
             nav: true,
             loop: true,
             autoplay: true,
@@ -33,4 +34,11 @@ $('.owl-carousel').owlCarousel({
             autoplayHoverPause: true
         }
     }
+})
+
+
+
+$('.faq_btn_icon').on('click',function(event){
+    console.log(event)
+    event.next().children('p').slideDown();
 })

@@ -131,27 +131,50 @@ p {
     }
 }
 
+@keyframes clickBtn {
+    0% {
+    }
+
+    50% {
+       transform: translateY(5px);
+    }
+    100% {}
+
+    // 100% {
+
+    //     box-shadow: 0px 0px 0px #042c6d;
+    //     transform: translateX(10px);
+    //     transform: translateY(10px);
+    // }
+}
+
 
 #page-header {
+    a {
+        font-size:2rem;
+    }
     nav {
         a {
             font-size: 1.2rem;
         }
+
         .my_drop_item {
             width: 17rem;
-            color:$white-color;
+            color: $white-color;
             padding: 0.5rem 2rem;
         }
-        .my_drop_item:hover{
+
+        .my_drop_item:hover {
             background: #3074e0;
         }
 
-        .dropdown-menu{
+        .dropdown-menu {
             background: #0f55c5;
-            border:none;
+            border: none;
             border-radius: 0;
-            padding:0;
+            padding: 0;
         }
+
         .dropdown:hover .dropdown-menu {
             display: block;
             margin-top: 0; // remove the gap so it doesn't close
@@ -160,9 +183,33 @@ p {
 }
 
 .page-vid {
-
     border-radius: 2rem;
 }
+
+.my_btn {
+    text-decoration: none;
+    height: 3rem;
+    width: 8rem;
+    transform: skew(-20deg);
+    color: white;
+    background: #0052D4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 10px 10px 2px #042c6d;
+    transition: 0.3s;
+    user-select:none;
+}
+
+.my_btn:hover {
+    color: white;
+    box-shadow: 0px 0px 0px #042c6d;
+    transform: translateX(10px);
+    transform: translateY(10px);
+    
+}
+
+
 
 #how_to_use {
     div {
@@ -194,10 +241,13 @@ p {
     border-top-right-radius: 2rem;
     width: 22rem;
     height: 15rem;
-    background: #FC466B;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #3F5EFB, #FC466B);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #3F5EFB, #FC466B); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    
+    background: #FC466B;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #3F5EFB, #FC466B);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #3F5EFB, #FC466B);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
     background-position: center;
     background-size: cover;
 
@@ -224,7 +274,6 @@ p {
     }
 
     .bf-content {
-        padding: 5rem 0;
 
         div {
             flex: 1;
@@ -308,9 +357,9 @@ p {
 
         }
     }
-
-
 }
+
+
 
 #other_service {
     img:hover {
@@ -351,29 +400,14 @@ p {
 }
 
 footer {
-    background-color: #2358bb;
-    min-height: 20rem;
+
+    p {
+        color: $white-color;
+    }
+
 }
 
 // news page 
-
-.new_container {
-    // h5 {
-    //     color: $highlight-color;
-    // }
-
-    // .card-body {
-        
-    // }
-    // :nth-child(3) {
-    //     color: rgb(168, 168, 168);
-    // }
-
-    // :nth-child(4) {
-    //     font-size: 1.2rem;
-    // }
-
-}
 
 @media all and (min-width:760px) {
     .page-vid {
@@ -381,3 +415,7 @@ footer {
         height: 20rem;
     }
 }
+
+// #page_hero_slide,#download_now,.how_to_use_item,#coperator,#highlight,#benefit,#other_service,#contact,#page-footer {
+//     visibility:hidden;
+// }

@@ -12,6 +12,7 @@ $('.owl-carousel').owlCarousel({
     loop: true,
     margin: 10,
     responsiveClass: true,
+    navigation: false,
     responsive: {
         0: {
             items: 2,
@@ -22,19 +23,23 @@ $('.owl-carousel').owlCarousel({
         },
         786: {
             items: 3,
-            slideBy:3,
+            slideBy: 3,
             nav: true,
             loop: true,
             autoplay: true,
             autoplayTimeout: 3000,
             autoplayHoverPause: true
         }
-    }
+    },
+    navText: [" ", " "]
 })
 
 
 
-$('.faq_btn_icon').on('click',function(event){
+$('.faq_btn_icon').on('click', function (event) {
     console.log(event)
     event.next().children('p').slideDown();
 })
+
+
+new WOW().init();

@@ -13,7 +13,7 @@ body {
   border-top: 3px solid #167a8b;
 }
 
-h1 {
+h1, h2 {
   color: #167a8b;
 }
 
@@ -298,6 +298,9 @@ footer p {
     width: 35rem;
     height: 20rem;
   }
+}
+.tintuc_content p {
+  font-size: 1.3rem;
 }
 
 /*# sourceMappingURL=main.css.map */

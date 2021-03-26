@@ -32,7 +32,7 @@ body {
     border-top: 3px solid $highlight-color;
 }
 
-h1 {
+h1,h2 {
     color: $highlight-color;
 }
 
@@ -419,3 +419,10 @@ footer {
 // #page_hero_slide,#download_now,.how_to_use_item,#coperator,#highlight,#benefit,#other_service,#contact,#page-footer {
 //     visibility:hidden;
 // }
+
+
+.tintuc_content{
+    p{
+        font-size: 1.3rem;
+    }
+}

@@ -1,0 +1,293 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./OwlCarousel2-2.3.4/dist/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="./OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="stylesheet" href="../library/wow/WOW/css/libs/animate.css" />
+    <link rel="stylesheet" href="main.css">
+    <title>Doi Vo</title>
+
+</head>
+
+<style>
+
+
+    body::-webkit-scrollbar {
+        display: none;
+    }
+
+    .text-grey {
+        color: #243D44;
+    }
+
+    .text-light-grey {
+        color: #646464;
+    }
+
+    .input-login {
+        border: none;
+        border-radius: 5px;
+        box-shadow: 0 3px 6px #8f8f8f;
+        width: 100%;
+        height: 3rem;
+        padding: 0 0.5rem;
+    }
+
+    .input-login:focus,
+    input-login:active,
+    input-login:hover {
+        border: 1px solid #646464;
+        box-shadow: none;
+    }
+
+    .btn-login {
+        color: #fff;
+        height: 2.2rem;
+        transition: 0.3s;
+    }
+
+    .btn-login:first-of-type {
+        border-bottom-right-radius: 0;
+        border-top-right-radius: 0;
+        transition: 0.3s;
+        width: 7rem;
+    }
+
+    .btn-login:last-of-type {
+        border-bottom-left-radius: 0;
+        border-top-left-radius: 0;
+        transition: 0.3s;
+    }
+
+    .btn-login:last-of-type:hover i {
+        animation: move-round 1s infinite;
+    }
+
+    @keyframes move-round {
+        0% {
+            transform: translateY(-1.5rem);
+        }
+
+        100% {
+            transform: translateY(1.7rem);
+        }
+    }
+
+    .download-app>div {
+        transition: 0.3s;
+    }
+
+    .download-app>img {
+        transition: 0.3s;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .download-app>div:hover {
+        transform: translateY(-0.5rem);
+    }
+
+    .download-app>img:hover {
+
+        transform: scale(1.1, 1.1) translateY(-1.5rem);
+    }
+</style>
+
+<body>
+    <header id="page-header" class="wow slideInLeft">
+        <div class="container-md d-none pt-2 d-sm-flex justify-content-end">
+            <button class="btn btn-sm btn-outline-primary btn-custom ">Khuyến Mãi</button>
+            <button class="btn btn-sm btn-outline-primary btn-custom mx-3">Đăng Nhập/Đăng Ký</button>
+            <button class="btn btn-sm btn-outline-primary btn-custom ">Đăng Ký Tư Vấn</button>
+        </div>
+        <nav class="navbar navbar-expand-lg navbar-light bg-white pt-3 mt-1 shadow-sm">
+            <div class="container-md">
+                <a class="navbar-brand" href="#" style="font-size: 2rem;">Doivo</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0 float-right">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">TRANG CHỦ</a>
+                        </li>
+                        <li class="nav-item dropdown ms-4">
+                            <a class="nav-link" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                HỢP TÁC
+
+                                <i class="fas fa-chevron-down"></i>
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item my_drop_item" href="#">DỊCH VỤ ĐỔI VỎ</a></li>
+                                <li><a class="dropdown-item my_drop_item" href="#">DỊCH VỤ KHÁC</a></li>
+                                <li><a class="dropdown-item my_drop_item" href="#">ĐỐI TÁC</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item ms-4">
+                            <a class="nav-link" href="#">TIN TỨC</a>
+                        </li>
+
+                        <li class="nav-item ms-4">
+                            <a class="nav-link" href="#">ĐIỂM ĐỔI VỎ</a>
+                        </li>
+                        <li class="nav-item ms-4">
+                            <a class="nav-link" href="#">VỀ CHÚNG TÔI</a>
+                        </li>
+
+                    </ul>
+
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+    <section class="row my-5 flex-row-reverse justify-content-lg-center" style="min-height: 20rem; width: 100%;">
+        <div class="col-12 col-lg-5 col-xxl-4 p-0 my-3 py-md-5 d-flex flex-column justify-content-center rounded">
+            <div class="container">
+                <p class="display-6 fw-bold text-grey">Đổi vỏ</p>
+                <p class="fs-6">Giải pháp thúc đẩy kinh doanh cho mọi siêu thị.<br />
+                    Giúp siêu thị tiếp cận hàng triệu khách hàng đang sử dụng đổi vỏ.
+                </p>
+            </div>
+            <form action="" method="POST" class=" container bg-white shadow-lg form-login"
+                style="padding-bottom: 3rem; padding-top: 3rem;">
+                
+                <p class="fs-1 fw-bold text-light-grey">Đăng nhập</p>
+                <input style="max-width: 50rem;" class="input-login" type="text" name="username"
+                    placeholder="Tên đăng nhập hoặc số điện thoại" required />
+
+                <input style="max-width: 50rem;" class="input-login mt-3" type="password" name="password"
+                    placeholder="Nhập mật khẩu" required />
+                <div class="d-flex justify-content-between mt-3" style="max-width: 50rem;">
+                    <div>
+                        <button class="btn btn-dark btn-login">Đăng nhập</button>
+                        <button class="btn btn-dark btn-login"><i class="fas fa-long-arrow-alt-down"></i></button>
+                    </div>
+                    <a href="#" class="btn btn-sm">Quên mật khẩu</a>
+                </div>
+            </form>
+            <div class="container">
+                <p class="text-end mt-3 mb-2">Hotline: 098 892 3132</p>
+                <p class="text-end ">Email: doivo@doivo.com</p>
+            </div>
+
+        </div>
+        <div class="col-12 col-lg-5 col-xxl-4 p-0 my-5">
+            <div class="row container m-0 justify-content-evenly download-app">
+                <img class="col-5 img-fuild rounded shadow-lg" src="./img/splash2.png" alt="">
+                <img class="col-5 img-fuild rounded shadow-lg" src="./img/splash1.png" alt="">
+            </div>
+            <div class="row container m-0 justify-content-evenly download-app">
+                <div
+                    class="col-12 col-md-5  d-flex justify-content-between align-items-center shadow-sm btn btn-dark mt-3">
+                    <i class="fab fa-app-store fs-3"></i>
+                    <div>
+                        <p class="text-white m-0">Tải về
+                            <br /><strong>App store</strong></p>
+                    </div>
+                </div>
+                <div
+                    class="col-12 col-md-5 d-flex justify-content-between align-items-center shadow-sm btn btn-dark mt-3 ">
+                    <i class="fab fa-google-play fs-3"></i>
+                    <div>
+                        <p class="text-white m-0">Tải về
+                            <br /><strong>Google play</strong> </p>
+                    </div>
+                </div>
+            </div>
+            <div class="container m-4">
+                <p class="display-6 fw-bold text-grey">Tải Đổi vỏ ngay</p>
+                <p class="fs-6">Để bắt đầu sử dụng các dịch vụ của chúng tôi
+                </p>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+    <footer id="page-footer" class="container-fluid bg-primary bg-gradient py-5">
+        <div class="container-md text-light">
+
+            <div class="row">
+                <div class="col-12 col-md-4">
+                    <h3 class=" pb-3 mb-4">Chăm sóc khách hàng</h3>
+                    <p class=" mb-0 fs-5">1900 55 55 77</p>
+                    <p class="mt-0 fs-5">hotrovnpay@vnpay.vn</p>
+                </div>
+
+                <div class="col-12 col-md-4">
+                    <h3 class=" pb-3 mb-4">Chăm sóc khách hàng</h3>
+                    <p class=" mb-0 fs-5">1900 55 55 77</p>
+                    <p class="mt-0 fs-5">hotrovnpay@vnpay.vn</p>
+                </div>
+
+                <div class="col-12 col-md-4">
+                    <h3 class=" pb-3 mb-4">Chăm sóc khách hàng</h3>
+                    <p class=" mb-0 fs-5">1900 55 55 77</p>
+                    <p class=" mt-0 fs-5">hotrovnpay@vnpay.vn</p>
+                </div>
+            </div>
+            <div class="row my-5">
+                <div class="col-12 col-md-8 pe-3">
+                    <p class=" fs-3 fw-3">CÔNG TY TNHH PHẦN MỀM SẮC MÀU HÀ NỘI</p>
+                    <p class="fw-5 fs-4">Hà Nội</p>
+                    <p class="fs-5">Số 1 ngõ 15/55/6 An Dương Vương, Phường Phú Thượng, Quận Tây Hồ, Thành phố Hà Nội
+                    </p>
+                </div>
+                <div class="col-12 col-md-4 ps-3">
+                    <p class="fs-1 ">Liên Kết</p>
+                    <i class="fab fa-facebook fs-1 pe-5"></i>
+                    <i class="fab fa-youtube fs-1"></i>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="../library/wow/WOW/dist/wow.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous">
+    </script>
+    <script src="https://kit.fontawesome.com/bdbb719b4e.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="./OwlCarousel2-2.3.4/dist/owl.carousel.min.js"></script>
+    <script src='main.js'></script>
+
+    <script>
+        $('.btn-login:last-of-type').on('click', function (e) {
+            e.preventDefault();
+            if ($('.btn-login:first-of-type').html() == "Đăng nhập") {
+
+                $('.form-login p:first-of-type').slideUp(400, function () {
+                    $(this).html("Đăng ký").slideDown(400);
+                });
+                $('.btn-login:first-of-type').fadeOut(400, function () {
+                    $(this).html("Đăng ký").fadeIn(400);
+                });
+
+            } else if ($('.btn-login:first-of-type').html() == "Đăng ký") {
+
+                $('.form-login p:first-of-type').slideUp(400, function () {
+                    $(this).html("Đăng nhập").slideDown(400);
+                });
+                $('.btn-login:first-of-type').fadeOut(400, function () {
+                    $(this).html("Đăng nhập").fadeIn(600);
+                });
+            }
+        });
+    </script>
+</body>
+
+</html>

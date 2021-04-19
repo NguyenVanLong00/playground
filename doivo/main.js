@@ -2,6 +2,9 @@
 
 
 
+
+window.addEventListener('DOMContentLoaded', (event) => {
+    
 $('.news_container').hover(
     function () { $(this).children().slideDown(); },
     function () { $(this).children().slideUp(); }
@@ -43,3 +46,4 @@ $('.faq_btn_icon').on('click', function (event) {
 
 
 new WOW().init();
+});

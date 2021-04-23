@@ -69,6 +69,15 @@ input[type=search]::-webkit-search-cancel-button {
   background: #ff313e;
 }
 
+.product_list_vertical {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+}
+.product_list_vertical .product {
+  margin-bottom: 16px;
+}
+
 .product {
   display: inline-block;
   position: relative;
@@ -77,10 +86,6 @@ input[type=search]::-webkit-search-cancel-button {
   height: 173px;
   color: #646464;
   transition: 0.3s;
-}
-.product:hover {
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.175);
-  transform: scale(1.1);
 }
 .product img {
   width: 100%;
@@ -91,7 +96,8 @@ input[type=search]::-webkit-search-cancel-button {
   margin: 0;
   white-space: initial;
 }
-.product .left_side, .product .right_side {
+.product .left_side,
+.product .right_side {
   padding: 0;
   margin: 0;
 }
@@ -113,7 +119,49 @@ input[type=search]::-webkit-search-cancel-button {
   right: 6px;
   color: #ff4a56;
 }
+.product .product_info {
+  position: absolute;
+  top: 0;
+  right: -15.5rem;
+  width: 15rem;
+  background-color: #ffffff;
+  transition: 0.3s;
+  transform: scale(0);
+}
+.product .product_info button {
+  color: #ffffff;
+  background-color: #ff4a56;
+}
+.product .product_info button:hover {
+  background-color: #ff1726;
+}
 
+.product_container {
+  justify-content: space-around;
+}
+
+.product_lg {
+  width: 160px !important;
+  height: 200px !important;
+}
+.product_lg img {
+  height: 142px !important;
+}
+
+@media (min-width: 992px) {
+  .product:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.175);
+    transform: scale(1.1) translateX(-3rem);
+  }
+  .product:hover .product_info {
+    transform: scale(1);
+  }
+
+  .product_container {
+    flex-direction: row-reverse;
+    padding: 0 6rem;
+  }
+}
 @media (min-width: 768px) {
   .product {
     width: 144px;
@@ -172,9 +220,6 @@ header .navbar .nav-link {
     display: block;
   }
 }
-header .navbar .nav-item .dropdown-menu {
-  transition: 0.3s;
-}
 header .navbar div button {
   background-color: #ff4a56;
 }
@@ -232,20 +277,27 @@ header .bottom_nav a p {
   font-size: 0.6rem;
 }
 
+footer {
+  background: #ff4a56;
+  min-height: 20rem;
+  width: 100%;
+  margin-top: 5rem;
+}
+
 .flash_sale {
   background-color: #ff4a56;
 }
 
-.slider {
+.first_component {
   margin-top: 3rem;
 }
 @media (min-width: 768px) {
-  .slider {
+  .first_component {
     margin-top: 3.5rem;
   }
 }
 @media (min-width: 992px) {
-  .slider {
+  .first_component {
     margin-top: 8rem;
   }
 }
@@ -260,6 +312,9 @@ header .bottom_nav a p {
   100% {
     transform: translateY(0);
   }
+}
+.active {
+  border-bottom: 3px solid #ff4a56;
 }
 
 /*# sourceMappingURL=main.css.map */

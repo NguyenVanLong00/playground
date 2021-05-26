@@ -1,0 +1,13 @@
+a {
+    width: 5rem;
+    height: 5rem;
+    background-color: blue;
+    margin: 1rem;
+}
+
+div {
+    width: 5rem;
+    height: 5rem;
+    background-color: red;
+    margin: 1rem;
+}
